@@ -28,7 +28,7 @@ class CheckinService extends EventEmitter {
     }
 
     chooseSeat(seat) {
-        if(this.user.balance < seat.price){
+        if(this.user.balance < seat.price || !seat.available){
             return;
         }
         if(!this.wasBooked){
