@@ -1,0 +1,21 @@
+{
+  "name": "airline-checkin",
+  "description": "An example AngularJS app",
+  "authors": [
+    ""
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/dashersw/airline-checkin",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.3",
+    "angular-mocks": "^1.6.3",
+    "angular-outer-click": "^0.1.0"
+  }
+}

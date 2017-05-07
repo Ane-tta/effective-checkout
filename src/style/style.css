@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
+* {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  -webkit-user-select: none;
+  width: 100%;
+  height: 100%;
+}
+body {
+  background: none;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.4px;
+  font-family: 'Lato', sans-serif;
+  color: #505050;
+}
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 30px;
+  font-weight: 400;
+}
+h1,
+h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+p {
+  color: #999;
+  line-height: 1.45em;
+  margin: 16px 0;
+}
+.emph-header {
+  border-bottom: 1px solid #f4f4f4;
+  padding-bottom: 7px;
+}
+.p20 {
+  padding: 20;
+}
+.m-20 {
+  margin: 20px;
+}
+.m-l-0 {
+  margin-left: 0;
+}
+.m-r-0 {
+  margin-right: 0;
+}
+.m-t-0 {
+  margin-top: 0;
+}
+.m-t-16 {
+  margin-top: 16px;
+}
+.m-b-0 {
+  margin-bottom: 0;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.col-md-4 {
+  width: 33.33333333333333%;
+}
+.col-md-8 {
+  width: 66.66666666666666%;
+}
+/*.global-container
+    width 90%
+    margin 0 auto*/
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.box-container {
+  border: 1px solid #e8e8e8;
+  box-shadow: 0 0 5px rgba(132,132,132,0.13);
+  background: #fff;
+  padding: 20px;
+}
+.box-container p.last-of-type {
+  padding-bottom: 0;
+}
+.top-area {
+  padding: 90px 0;
+  margin-bottom: 20px;
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0.9), rgba(255,255,255,0.7)), url("https://pp.userapi.com/c837535/v837535687/3ab67/kRGcH6UQcw0.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.btn {
+  border-radius: 3px;
+  text-transform: uppercase;
+  background-color: #de5b05;
+  color: #fff;
+  border: none;
+  padding: 10px 12px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+.btn:focus {
+  outline: none;
+}
+.btn:hover {
+  background-color: #bf5610;
+}
+.select-seat-area {
+  width: calc(100% + 9px);
+  margin-top: 20px;
+}
+.seat {
+  display: inline-block;
+  min-width: 50px;
+  width: calc(11.1111% - 9px);
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border: 1px solid #e8e8e8;
+  margin-right: 9px;
+  margin-bottom: 9px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.seat:hover {
+  background-color: #e8e8e8;
+}
+.seat.available {
+  background-color: #72bf66 !important;
+  color: #fff !important;
+}
+/*.double-block
+    overflow hidden
+.to-left
+    float left
+.to-right
+    float right*/
+@media all and (max-width: 990px) {
+  .row {
+    flex-direction: column;
+  }
+  .col-md-4,
+  .col-md-8 {
+    width: 100%;
+  }
+  .box-container {
+    margin: 20px 0;
+  }
+}

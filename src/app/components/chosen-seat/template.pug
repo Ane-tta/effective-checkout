@@ -1,0 +1,9 @@
+div.chosen-area
+    div.box-container.m-20.m-l-0
+        h2.m-t-0.emph-header Chosen seat:
+        p id: {{$ctrl.seat.id}}
+        p Available: {{$ctrl.seat.available}}
+        p Seat Number: {{$ctrl.seat.number}}
+        p Price: {{$ctrl.seat.price}}
+        p User: {{$ctrl.seat.userId}}
+        input(class="btn to-right m-t-16" type="button" value="Book this seat" ng-show="$ctrl.seat.available" ng-click="$ctrl.bookSeat()")

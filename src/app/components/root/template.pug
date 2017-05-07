@@ -1,0 +1,27 @@
+<!-- a workaround with bg image because the compiler was adding an additional forward slash -->
+div(class="top-area" style="background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0.9),rgba(255, 255, 255,0.7)), url(https:/pp.userapi.com/c837535/v837535687/3ab67/kRGcH6UQcw0.jpg);")
+    div.container
+        h1 {{$ctrl.title}}
+div.container
+    div.row
+        div.col-md-4
+            div.box-container.m-20.m-l-0
+                h2.m-t-0.emph-header User
+                p id: {{$ctrl.user.id}}
+                p balance: {{$ctrl.user.balance}}
+                
+            div.seat-area
+                chosen-seat(ng-if="$ctrl.chosenSeat")
+
+        div.col-md-8
+            div.box-container.m-20.m-r-0
+                h2.m-t-0.emph-header Seat plan
+                
+                div.select-seat-area
+                    div(
+                        class="seat $ctrl.user.balance"
+                        ng-repeat="seat in $ctrl.seats track by seat.id"
+                        ng-click="$ctrl.chooseSeat(seat)"
+                        ng-class="{available: seat.available }"
+                    )
+                        span {{seat.number}}
